@@ -1,7 +1,7 @@
 {
     "manifest_version": 2,
     "name": "chatwork lstamp",
-    "version": "1.0.3",
+    "version": "1.0.4",
     "homepage_url": "https://github.com/uenoryoichi/chatwork_helper-1",
     "content_scripts": [{
         "matches": [
