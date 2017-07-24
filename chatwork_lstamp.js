@@ -28,47 +28,53 @@
   });
 
   var shortcutConf = [
-    { 
+    {
       key: ':ok',
       action: function() {
         _chatText.val(_chatText.val().replace(/:ok/, '[preview id=123872200 ht=130]'));
       }
     },
-    { 
+    {
       key: ':thank',
       action: function() {
         _chatText.val(_chatText.val().replace(/:thank/, '[preview id=123916974 ht=130]'));
       }
     },
-    { 
+    {
       key: ':roger',
       action: function() {
         _chatText.val(_chatText.val().replace(/:roger/, '[preview id=123916999 ht=130]'));
       }
     },
-    { 
+    {
       key: ':good',
       action: function() {
         _chatText.val(_chatText.val().replace(/:good/, '[preview id=123917003 ht=130]'));
       }
     },
-    { 
+    {
       key: ':ban',
       action: function() {
         _chatText.val(_chatText.val().replace(/:ban/, '[preview id=123917011 ht=130]'));
       }
     },
-    { 
+    {
       key: ':bow',
       action: function() {
         _chatText.val(_chatText.val().replace(/:bow/, '[preview id=123917024 ht=130]'));
       }
     },
+    {
+      key: ':lgtm',
+      action: function() {
+        _chatText.val(_chatText.val().replace(/:lgtm/, '[preview id=169997557 ht=130]'));
+      }
+    }
   ];
 
   var exec = function() {
     val = _chatText.val() == '' ? txt : _chatText.val();
-    // each action 
+    // each action
     shortcutConf.forEach(function(conf) {
       var regMatch = new RegExp("(^|\n)" + conf.key + "($|\n)");
       if (_chatText.val().match(regMatch)) {
